@@ -1,12 +1,14 @@
 import Foundation
 
 enum Config {
-    static let geminiAPIKey: String = {
-        guard let filePath = Bundle.main.path(forResource: "Info", ofType: "plist"),
-              let plist = NSDictionary(contentsOfFile: filePath),
-              let value = plist["GEMINI_API_KEY"] as? String else {
-            fatalError("Couldn't find key 'GEMINI_API_KEY' in Info.plist.")
+    static let geminiAPIKey: String = fetch("GEMINI_API_KEY")
+    static let supabaseURL: String = fetch("SUPABASE_URL")
+    static let supabaseKey: String = fetch("SUPABASE_KEY")
+
+    private static func fetch(_ key: String) -> String {
+        guard let value = Bundle.main.object(forInfoDictionaryKey: key) as? String else {
+            fatalError("Couldn't find key '\(key)' in Info.plist.")
         }
         return value
-    }()
+    }
 }
