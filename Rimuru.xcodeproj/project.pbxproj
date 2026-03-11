@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D0AA73142F58901500C2CD23 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = D0AA73132F58901500C2CD23 /* Supabase */; };
+		D0AA73282F58A5B500C2CD23 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = D0AA73272F58A5B500C2CD23 /* GoogleGenerativeAI */; };
+		D0AA732A2F58A5BC00C2CD23 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D0AA73292F58A5BC00C2CD23 /* FirebaseCore */; };
+		D0AA732C2F58A5C100C2CD23 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D0AA732B2F58A5C100C2CD23 /* GoogleSignIn */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D0AA72CB2F582B3900C2CD23 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +36,22 @@
 		D0AA72D42F582B3900C2CD23 /* RimuruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RimuruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D0AA731E2F58A04700C2CD23 /* Exceptions for "Rimuru" folder in "Rimuru" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D0AA72BA2F582B3600C2CD23 /* Rimuru */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D0AA72BD2F582B3600C2CD23 /* Rimuru */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D0AA731E2F58A04700C2CD23 /* Exceptions for "Rimuru" folder in "Rimuru" target */,
+			);
 			path = Rimuru;
 			sourceTree = "<group>";
 		};
@@ -52,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AA73142F58901500C2CD23 /* Supabase in Frameworks */,
+				D0AA732C2F58A5C100C2CD23 /* GoogleSignIn in Frameworks */,
+				D0AA732A2F58A5BC00C2CD23 /* FirebaseCore in Frameworks */,
+				D0AA73282F58A5B500C2CD23 /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +102,7 @@
 				D0AA72BD2F582B3600C2CD23 /* Rimuru */,
 				D0AA72CD2F582B3900C2CD23 /* RimuruTests */,
 				D0AA72D72F582B3900C2CD23 /* RimuruUITests */,
+				D0AA73122F58901500C2CD23 /* Frameworks */,
 				D0AA72BC2F582B3600C2CD23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +115,13 @@
 				D0AA72D42F582B3900C2CD23 /* RimuruUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D0AA73122F58901500C2CD23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +144,10 @@
 			);
 			name = Rimuru;
 			packageProductDependencies = (
+				D0AA73132F58901500C2CD23 /* Supabase */,
+				D0AA73272F58A5B500C2CD23 /* GoogleGenerativeAI */,
+				D0AA73292F58A5BC00C2CD23 /* FirebaseCore */,
+				D0AA732B2F58A5C100C2CD23 /* GoogleSignIn */,
 			);
 			productName = Rimuru;
 			productReference = D0AA72BB2F582B3600C2CD23 /* Rimuru.app */;
@@ -195,6 +231,12 @@
 			);
 			mainGroup = D0AA72B22F582B3600C2CD23;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D0AA72FD2F58349D00C2CD23 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				D0AA731C2F589DFA00C2CD23 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				D0AA731F2F58A1B700C2CD23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D0AA73242F58A3AB00C2CD23 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D0AA72BC2F582B3600C2CD23 /* Products */;
 			projectDirPath = "";
@@ -397,6 +439,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rimuru/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rimuru;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +473,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Rimuru/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Rimuru;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -570,6 +618,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0AA72FD2F58349D00C2CD23 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		D0AA731C2F589DFA00C2CD23 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+		D0AA731F2F58A1B700C2CD23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.10.0;
+			};
+		};
+		D0AA73242F58A3AB00C2CD23 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0AA73132F58901500C2CD23 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0AA72FD2F58349D00C2CD23 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		D0AA73272F58A5B500C2CD23 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0AA731C2F589DFA00C2CD23 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+		D0AA73292F58A5BC00C2CD23 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0AA731F2F58A1B700C2CD23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		D0AA732B2F58A5C100C2CD23 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0AA73242F58A3AB00C2CD23 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D0AA72B32F582B3600C2CD23 /* Project object */;
 }

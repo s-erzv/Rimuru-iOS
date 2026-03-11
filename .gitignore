@@ -1,0 +1,18 @@
+# Xcode
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.playground
+
+# User settings
+xcuserdata/
+*.xcuserdatad/
+
+# Swift Package Manager
+.build/
+
+Pods/
+
+# OS X
+.DS_Store
