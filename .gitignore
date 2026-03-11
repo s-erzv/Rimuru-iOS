@@ -16,3 +16,7 @@ Pods/
 
 # OS X
 .DS_Store
+
+# Secrets
+Secrets.xcconfig
+GoogleService-Info.plist
